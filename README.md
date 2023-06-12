@@ -1,11 +1,12 @@
 # FacebookStyleChat
 React Facebook Style Chat<br>
-<p>Thank you Sam Roth (https://github.com/sejr/react-messenger)</p>
+
 
 <p align="center">
   <img src="./assets/facestylechat.png" />
 </p>
-
+<p></p>
+<p>Thank you Sam Roth (https://github.com/sejr/react-messenger)<br>these codes have been developed and will continue to be developed</p>
 ## Available Components
 
 When using these components it is important to keep in mind that we are utilizing a few different dependencies to achieve a better user experience. Specifically:
