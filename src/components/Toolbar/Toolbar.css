@@ -1,0 +1,67 @@
+.toolbar {
+  height: 32px;
+  padding-bottom: 8px;
+  display: flex;
+  padding-left: 8px;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  padding-top: 8px;
+  padding-right: 8px;
+  border-top-right-radius: 8px;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1),0 -1px rgba(0,0,0,0.1) inset,0 2px 1px -1px rgba(255,255,255,0.5) inset;
+  position: relative;
+
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  .toolbar {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.toolbar-title {
+  position: relative;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  flex-shrink: 1;
+  flex-direction: row;
+  margin-left: 0;
+  padding-bottom: 0;
+  flex-basis: auto;
+  width: 100%;
+}
+
+.left-items, .right-items,.left-photo {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+}
+.left-photo {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.right-items {
+  flex-direction: row-reverse;
+}
+
+.left-items .toolbar-button {
+  margin-right: 10px;
+}
+
+.right-items .toolbar-button {
+  margin-left: 10px;
+}
+
+.left-items .toolbar-button:last-child,
+.right-items .toolbar-button:last-child {
+  margin: 0;
+}

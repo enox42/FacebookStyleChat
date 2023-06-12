@@ -1,0 +1,116 @@
+.msgbox {
+  position: fixed;
+  bottom:0;
+  right: 80px;
+  display:flex;
+  line-height: 1.3333;
+  max-height: 100%;
+  background: none !important;  
+}
+
+
+.msgbox .message-list-containerbox {  
+  /* position: relative; */
+  flex-shrink: 1;
+  flex-direction: column;
+  display:flex;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  line-height: 1.3333;
+  max-height: 100%;
+}
+
+.message-list-container {
+  flex-basis: 0px;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 70px;
+  flex-shrink: 1;
+  flex-direction: column;
+  display:flex;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  line-height: 1.3333;
+  max-height: 100%;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+}
+
+.msgbox .message-list{
+  position:relative; 
+  display: flex;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  flex-direction: column;
+  font-size: .9375rem;
+  margin-left: 10px;
+  line-height: 1.3333;
+  width: 328px;
+  height: 455px;
+  max-height: calc(100vh - 56px - 10px);
+  background-color: #f0f2f5 !important;
+  box-shadow: 0 12px 28px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.user-photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  line-height: 1.3333;
+}
+
+.compose {
+  background: white;
+  border-top: 1px solid #eeeef1;
+  width:100%;
+  line-height: 1.3333;
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: flex-end;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  .compose {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.compose-input {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  background: none;
+  margin:0 5px;
+}
+
+.compose-input::placeholder {
+  opacity: 0.3;
+}
+
+.compose .toolbar-button {
+  color: #bbbbbf;
+  margin: 0 8px;
+}
+
+.compose .toolbar-button:hover {
+  color: #99999c;
+}
+
+
+.reactions{
+position:absolute;
+right: 328px;
+bottom:40px
+}
+
+.reactions .emoji-mart {
+  z-index: 999;
+ }
